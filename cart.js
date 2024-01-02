@@ -87,7 +87,8 @@ I would choose 'name' for one of the properties that way the restaurant knows wh
 will be a string data type since it is just text values. My second property would be 'price' to know what you are paying.
 Since price is a number or integer it will be a number data type. Third property would be 'items', have to keep inventory. 
 This will also will be a string data type for the same reason as 'name'. Last property would be "pickUp", to help better 
-prioritize orders. And I would set it as a boolean data type since there is only two options either pick up or delivery.
+prioritize orders as they come in. And I would set it as a boolean data type since there is only two options either pick 
+up or delivery.
 */
 
 /*
