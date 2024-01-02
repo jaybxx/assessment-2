@@ -34,8 +34,6 @@ const cart = [
 ]
 
 //CODE HERE
-
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
 const summedPrice = cart.reduce((function (acc, obj) { return acc + obj.price; }), 0);
 console.log(summedPrice)
 
@@ -55,7 +53,12 @@ console.log(summedPrice)
 */
 
 //CODE HERE
+function calcFinalPrice(cartTotal, couponValue, tax) {
+    let salesTax = cartTotal * tax
+    return cartTotal + salesTax - couponValue
+  }
 
+  console.log(calcFinalPrice(20, 3, .15))
 
 
 //////////////////PROBLEM 3////////////////////
@@ -80,7 +83,11 @@ console.log(summedPrice)
 
 /*
     TEXT ANSWER HERE
-
+I would choose 'name' for one of the properties that way the restaurant knows who it is going to. The 'name' property 
+will be a string data type since it is just text values. My second property would be 'price' to know what you are paying.
+Since price is a number or integer it will be a number data type. Third property would be 'items', have to keep inventory. 
+This will also will be a string data type for the same reason as 'name'. Last property would be "pickUp", to help better 
+prioritize orders. And I would set it as a boolean data type since there is only two options either pick up or delivery.
 */
 
 /*
@@ -89,3 +96,9 @@ console.log(summedPrice)
 */
 
 //CODE HERE
+let customer = {
+    name: "Shinra",
+    items: "Yakisoba",
+    price: 15,
+    pickUp: true,
+  }
